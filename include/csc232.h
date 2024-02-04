@@ -71,14 +71,27 @@ namespace csc232
         };
 
         // TODO: 2.1 Provide an inline definition of the Square class below
+        /**
+         * @brief class representing a square
+         */
         class Square : public Shape
         {
                 public:
+                        /**
+                         * @brief finds the area of a Square object
+                         *
+                         * @return area of Square
+                         */
                         double area() const override
                         {
                                 return side * side;
                         }
 
+                        /**
+                         * @brief finds the perimeter of a Square object
+                         *
+                         * @return perimeter of Square
+                         */
                         double perimeter() const override
                         {
                                 return side * 4;
@@ -87,20 +100,39 @@ namespace csc232
                         ~Square() = default;
 
                 private:
+                        /**
+                         * @brief side length of Square object
+                         */
                         double side = 1;
         };
 
         // TODO: 3.1 Provide an inline definition of the Circle class below
+        /**
+         * @brief class representing a circle
+         */
         class Circle : public Shape
         {
                 public:
+                        /**
+                         * @brief radius Circle object
+                         */
                         double rad = 1;
 
+                        /**
+                         * @brief finds the area of a Circle object
+                         *
+                         * @return area of Circle
+                         */
                         double area() const override
                         {
                                 return M_PI * (rad * rad);
                         }
 
+                        /**
+                         * @brief finds the perimeter of a Circle object
+                         *
+                         * @return perimeter of Circle
+                         */
                         double perimeter() const override
                         {
                                 return 2 * M_PI * rad;
